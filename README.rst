@@ -1,8 +1,15 @@
 
-# install
+Install
+=======
+
+``
 pip install numpickle as npl
+``
 
+Usage
+=====
 
+``
 import pandas as pd
 
 # example data frame with numeric content
@@ -35,6 +42,6 @@ npl.save_numpickle(df1, "/home/user/test1.npy")
 
 # load data frame from numpy array and its corresponding pickle file
 df1_ = npl.load_numpickle("/home/user/test1.npy")
-
+``
 
 
