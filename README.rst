@@ -2,15 +2,14 @@
 Install
 =======
 
-``
-pip install numpickle as npl
-``
+``pip install numpickle as npl``
+
 
 Usage
 =====
 
-``
-import pandas as pd
+
+``import pandas as pd
 
 # example data frame with numeric content
 df = pd.DataFrame([[1, 2], [3, 4]])
@@ -41,7 +40,4 @@ npl.save_numpickle(df1, "/home/user/test1.npy")
 # the pickled names of column and rows are saved into "/home/user/.test.npy.pckl"
 
 # load data frame from numpy array and its corresponding pickle file
-df1_ = npl.load_numpickle("/home/user/test1.npy")
-``
-
-
+df1_ = npl.load_numpickle("/home/user/test1.npy")``
