@@ -20,9 +20,9 @@ def load_numpickle(fpath):
         df = df.astype(dtypes)
     return df
 
-def save_file_as_numpickle(fpath, sep="\t", all_numeric=False, deletep=False, *args, **kwargs):
+def save_file_as_numpickle(fpath, sep="\t", ending=".tab", all_numeric=False, deletep=False, *args, **kwargs):
     df = pd.read_csv(fpath, sep=sep, *args, **kwargs)
-    save_numpickle(df, fpath.replace(".tab", ".npy"), all_numeric=all_numeric)
+    save_numpickle(df, fpath.replace(ending, ".npy"), all_numeric=all_numeric)
     if deletep:
         os.remove(fpath)
 
