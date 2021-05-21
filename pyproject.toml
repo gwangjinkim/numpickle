@@ -6,7 +6,7 @@ authors = ["Gwang-Jin Kim <gwang.jin.kim.phd@gmail.com>"]
 maintainers = ["Gwang-Jin Kim <gwang.jin.kim.phd@gmail.com>"]
 license = "MIT"
 readme = "README.md"
-repository = "https://bitbucket.org/gwangjinkim/numpickle/src"
+repository = "https://github.com/gwangjinkim/numpickle"
 documentation = ""
 keywords = [
   "Excel",
