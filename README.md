@@ -7,6 +7,7 @@ The bigger the data frame, the bigger the gain of speed when reading compared to
 (E.g., a several GB RAM-consuming matrix took minutes to read-in using normal `pd.read_csv()`, but took only seconds to load when using `numpickle.load_numpickle()`).
 `all_numeric=True` accelerates loading by ~ 7 times.
 
+Also mentioned in my [medium article](https://gwang-jin-kim.medium.com/faster-loading-and-saving-of-pandas-data-frames-using-numpickle-numpy-and-pickle-d15870519529)
 
 ## Install
 
