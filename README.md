@@ -3,6 +3,9 @@
 
 Faster loading of pandas data frames by saving them as numpy arrays and pickling their meta info (row+column names, column dtype info).
 
+The bigger the data frame, the bigger the gain of speed when reading compared to loading a text file.
+(E.g., a 80GB RAM-consuming matrix took ~30 min to read-in using normal pd.read_csv(), but took only ~20 secs to load when using numpickle.load_numpickle()).
+
 ## Install
 
 ```pip install numpickle```
