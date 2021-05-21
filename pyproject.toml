@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "numpickle"
-version = "0.1.3-2"
+version = "0.1.3-3"
 description = "Faster loading of pandas data frames by saving them as numpy arrays and pickling their meta info (row+column names, column dtype info)."
 authors = ["Gwang-Jin Kim <gwang.jin.kim.phd@gmail.com>"]
 maintainers = ["Gwang-Jin Kim <gwang.jin.kim.phd@gmail.com>"]
