@@ -1,8 +1,21 @@
 [tool.poetry]
 name = "numpickle"
-version = "0.1.2-4"
+version = "0.1.2-5"
 description = "Save and load numeric pandas data frames as numpy array and pickle their row and column names and types info for performance reasons."
 authors = ["Gwang-Jin Kim <gwang.jin.kim.phd@gmail.com>"]
+maintainers = ["Gwang-Jin Kim <gwang.jin.kim.phd@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://bitbucket.org/gwangjinkim/numpickle/src"
+documentation = ""
+keywords = [
+  "Excel",
+  "Pandas",
+  "data frame",
+  "I/O"
+]
+
+
 
 [tool.poetry.dependencies]
 python = "^3.7.1"
