@@ -55,6 +55,46 @@ df_.dtypes
 all(df == df_)
 # True
 
+
+
+
+
+
+####################################
+# data frames with numeric-only values
+###################################
+
+# If you have a data frame with only numeric values, put all_numeric=True .
+# Then dtypes is set to None and the loading will be slightly faster.
+df = pd.DataFrame([[1, 2], [3, 4]])
+df.columns = ["A", "B"]
+df.index = ["row1", "row2"]
+
+df
+#       A  B
+# row1  1  2
+# row2  3  4
+
+df.dtypes
+# A     int64
+# B     int64
+# dtype: object
+
+# save numeric-only data frame
+npl.save_numpickle(df, "/home/user/test.npy", all_numeric=True)
+# load numeric-only data frame (it recognizes automatically that it is numeric only
+# because dtypes=None or not existent in pickle file
+df_ = npl.load_numpickle("/home/user/test.npy")
+
+
+###################################
+# save a csv or tab file as numpickle file(s) and delete original files
+###################################
+npl.save_file_as_numpickle(fpath, sep="\t", ending=".tab", all_numeric=True, deletep=True)
+# the data are read by pd.read_csv(), additional arguments for the reading process can be given
+# into the argument list, they will be forwarded to pd.read_csv() by *args, **kwargs
+# for the output file name, the `ending` is replaced by ".npy" and ".npy.pckl".
+# So choose the separator and ending accordingly when file is a csv file (sep=",", ending=".csv").
 ```
 
 
