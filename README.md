@@ -1,4 +1,9 @@
-# Install
+
+# numpickle
+
+Faster loading of pandas data frames by saving them as numpy arrays and pickling their meta info (row+column names, column dtype info).
+
+## Install
 
 ```pip install numpickle```
 
